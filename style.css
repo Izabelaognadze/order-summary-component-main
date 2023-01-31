@@ -1,0 +1,158 @@
+:root{
+    --crl-primary-Pale-blue: hsl(225, 100%, 94%);
+    --crl-primary-Bright-blue: hsl(245, 75%, 52%);
+
+    --crl-neutral-blue-100: hsl(225, 100%, 98%);
+    --crl-neutral-blue-500: hsl(224, 23%, 55%);
+    --crl-neutral-blue-900: hsl(223, 47%, 23%);
+
+    --ff-accent:'Red Hat Display', sans-serif;
+
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+}
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  body{
+    background-color: var(--crl-primary-Pale-blue);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+    font-size: 16px;
+    font-family: var(--ff-accent);
+  }
+  .content{
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  .product{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .main-text{
+    margin: 1rem 1rem 1rem 1rem;
+    font-weight: var(--fw-black);
+    color: var(--crl-neutral-blue-900);
+  }
+  .summary{
+    color: var(--crl-neutral-blue-500);
+    font-weight: var(--fw-medium);
+    font-family: var();
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .plan-and-price{
+    background-color: var(--crl-neutral-blue-100);
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .mus-pic{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .chosen{
+    margin-right: 4rem;
+  }
+  .plan-type{
+    color: var(--crl-neutral-blue-900);
+    font-weight: var(--fw-black);
+  }
+  .price-tag{
+    color: var(--crl-neutral-blue-500);
+  }
+  .change-plan{
+    color: var(--crl-primary-Bright-blue);
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: var(--fw-bold);
+  }
+  .payment{
+
+  }
+  .proceed-button{
+    background-color: var(--crl-primary-Bright-blue);
+    padding: 1rem 0;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow:0px 4px 20px var(--crl-neutral-blue-500);
+    border-radius: 1rem;
+    border-color: var(--crl-primary-Bright-blue);
+
+  }
+  .proceed-button:hover{
+    opacity: 0.8;
+  }
+  .cancel-button{
+    color: var(--crl-neutral-blue-500);
+    background-color: white;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 1.5rem;
+    font-weight: var(--fw-black);
+    cursor: pointer;
+
+  }
